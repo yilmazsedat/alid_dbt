@@ -1,0 +1,1 @@
+select J_BACI from {{ ref("INT_ORIGINAL") }} group by  J_BACI having count(1)>1

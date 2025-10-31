@@ -1,0 +1,1 @@
+select * from {{ ref("INT_DEAL") }} where length(trim("J_BFCI"))=0
