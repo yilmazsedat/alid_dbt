@@ -33,3 +33,19 @@ models:
         constraints:
           - type: not_null
           - type: unique
+  
+  - name: INT_ORIGINAL
+    description: "Original amounts per facility"
+    columns:
+      - name: J_BACI
+        constraints:
+          - type: not_null
+          - type: unique
+
+  - name: INT_FACILITY
+    description: "Facility data combined with Deal, Original and other ACBS tables"
+    columns:
+      - name: J_BACI
+        constraints:
+          - type: not_null
+          - type: unique
