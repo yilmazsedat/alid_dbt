@@ -1,0 +1,35 @@
+models:
+  - name: ST_ADALM
+    description: "C/A Deal - Base & Sect Sblmts (ACO)"
+
+  - name: ST_ADAMI
+    description: "C/A Deal - Misc Codes/Info (ACO)"
+
+  - name: ST_ADAMS
+    description: "C/A Deal Information (ACO)"
+
+  - name: ST_ADWB
+    description: "Information Binder (ACO)"
+
+  - name: ST_ADWC
+    description: "Information Chapter Registery (ACO)"
+
+  - name: ST_ADWP
+    description: "Information Worksheet (ACO)"
+
+  - name: ST_CAMI
+    description: "CA Miscellaneous Codes/Information"
+
+  - name: ST_CAMS
+    description: "Credit Arrangement Master Record"
+
+  - name: ST_SYXM
+    description: "Foreign Currency Rate Table"
+
+  - name: INT_DEAL
+    description: "Deal table produced from ADALM"
+    columns:
+      - name: J_BFCI
+        constraints:
+          - type: not_null
+          - type: unique
