@@ -1,0 +1,11 @@
+snapshots:
+  - name: mrt_facility_scd
+    relation: ref("INT_FACILITY")
+    config:
+      schema: marts
+      database: alid_tools
+      unique_key: J_BACI
+      strategy: check
+      check_cols: ["j_babi","j_bagt","j_baec","j_bayc","j_bcgl","original","j_crdc","j_bcdl"]
+      hard_delete: invalidate
+      dbt_valid_to_current: "to_date('21000101','YYYYMMDD')"
